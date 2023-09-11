@@ -1,0 +1,38 @@
+
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin font($font-family, $font-size, $color, $capitalize) {
+  color: $color;
+  font-family: $font-family;
+  line-height: $font-size;
+  font-size: $font-size;
+  text-transform: $capitalize;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.slogan-box__headline {
+  background-color: green;
+
+  @include font('Oswald', 36px, #fff, normal);
+  text-align: center;
+}
+
+.slogan-box__slogan {
+  background-color: green;
+
+  @include font('Oswald', 14px, #fff, uppercase);
+  text-align: center;
+}
+
+// .my-text {
+//   @include font('Oswald', 16px); // Пример использования миксина для шрифта Oswald
+// }
+
+// .another-text {
+//   @include font('Lato', 14px); // Пример использования миксина для шрифта Lato
+// }

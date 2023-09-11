@@ -1,0 +1,38 @@
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+div {
+  background-repeat: no-repeat;
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 13px 20px 14px 20px;
+  width: calc(100% - 40px);
+}
+
+.header__logo {
+  background-image: url(../img/mobile/header-logo.svg);
+  height: 38px;
+  width: 33px;
+}
+
+.header__headline-logo {
+  background-image: url(../img/cat-energy-logo.svg);
+  height: 18px;
+  width: 101px;
+}
+
+.header__toggler {
+  background-image: url(../img/mobile/menu.svg);
+  height: 18px;
+  width: 24px;
+}
+
+.item--hidden {
+  display: none;
+}
